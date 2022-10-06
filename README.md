@@ -13,7 +13,7 @@
   </a>
   <h3 align="center">Prisma Autozod</h3>
   <p align="center">
-    A custom prisma generator that creates Zod schemas from your Prisma model.
+    Prisma generator to auto generate zod schemas from Prisma models.
     <br />
     <a href="https://github.com/akparhi/prisma-autozod"><strong>Explore the docs »</strong></a>
     <br />
@@ -22,7 +22,6 @@
     ·
     <a href="https://github.com/akparhi/prisma-autozod/issues">Report Bug</a>
     ·
-    <a href="https://github.com/akparhi/prisma-autozod/issues">Request Feature</a>
   </p>
 </p>
 
@@ -85,14 +84,6 @@ This provides a way of automatically generating them with your prisma
 
 To get a local copy up and running follow these simple steps.
 
-### Prerequisites
-
-This project utilizes yarn and if you plan on contributing, you should too.
-
-```sh
-npm install -g yarn
-```
-
 ### Installation
 
 0.  **Ensure your tsconfig.json enables the compiler's strict mode.**
@@ -101,7 +92,7 @@ npm install -g yarn
 1.  Add prisma-autozod as a dev dependency
 
     ```sh
-    yarn add -D prisma-autozod
+    yarn add prisma-autozod
     ```
 
 2.  Add the prisma-autozod generator to your schema.prisma
@@ -181,7 +172,7 @@ export const PostModel = z.object({
 
 ### Extending Zod Fields
 
-You can also use the `@zod` keyword in rich-comments in the Prisma schema
+You can use the `@zod` keyword in rich-comments in the Prisma schema
 to extend your Zod schema fields:
 
 ```prisma
