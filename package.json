@@ -1,6 +1,6 @@
 {
 	"name": "prisma-autozod",
-	"version": "1.0.2",
+	"version": "1.1.0",
 	"description": "A Prisma generator that creates Zod schemas for all of your models",
 	"license": "MIT",
 	"author": "Anand Kumar Parhi",
